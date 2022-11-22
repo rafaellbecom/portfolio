@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+
+header{
+    background-color: #141010;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #E33B26;
+}
+
+nav a.ativo{
+    color: #E33B26;
+}
+
+/*BOTÕES*/
+.button{
+    background-color: #E33B26;
+    background: rgb(227,59,38);
+background: linear-gradient(90deg, rgba(227,59,38,1) -10%, rgba(173,26,7,1) 76%);
+    color: white;
+    padding: 13px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.button:hover{
+    -webkit-box-shadow: 0px 0px 48px 6px rgba(227,59,38,0.5); 
+box-shadow: 0px 0px 48px 6px rgba(227,59,38,0.5);
+    transform: scale(1.15);
+}
+
+/*Display*/
+#display{
+    height: 100vh;
+    background-image: url("assets/imagens/bg-display.svg");
+    background-color: #0F0F0F;
+}
+
+#icon-html{
+    position: relative;
+    top: 320px;
+    left: 00px;
+    transform: translatey(0px);
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translate(0px);
+    }
+
+    50%{
+        transform: translate(0px, -40px) rotate(-10deg);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.title{
+    color: white;
+    font-size: 40px;
+}
